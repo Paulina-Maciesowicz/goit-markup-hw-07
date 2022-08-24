@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #2F303A;
+    --third-color: #F5F4FA;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}   
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    line-height: 1;
+}
+/* ----------------MIN-RESET------------------------- */
+/* remember to define focus styles! */
+ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+/* ----------------MIN-RESET-END--------------------- */
+
+/* --------------------HEADER------------------------ */
+.page-header {
+    background-color: #FFFFFF;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+.menu-nav {
+    display: flex;
+    justify-content: center;
+}
+.menu-nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;  
+}
+.menu-nav__item { 
+    margin-right: 46px;
+}
+.menu-nav__link {
+    position: relative;
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+}
+.menu-nav__link::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 4px;
+    border-radius: 2px;
+    width: 0;
+    left: 0;
+    bottom: -32px;
+}
+.menu-nav__link:hover:after {
+    width: 100%;
+}
+.menu-nav__link--active::after {
+    position: absolute;
+    background-color: var(--main-color);
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+    left: 0;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
+}
+.logo {
+    margin-right: 93px;
+}
+.logo__link {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.logo__link--highlight {
+    color: var(--main-color);   
+}
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.contact-nav__item {
+    text-decoration: none; 
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
+}
+.contact-nav__img {
+    margin-right: 10px;
+    fill: #757575;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: fill;
+}
+.contact-nav__img--mail {
+    width:16px;
+    height:12px;
+}
+.contact-nav__img--phone {
+    width:10px;
+    height:16px;
+}
+.contact-nav__link {
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
+}
+.contact-nav__link:hover::after {
+    width: 100%;
+}
+.contact-nav__link:hover {color: rgba(33, 150, 243, 1);}
+.contact-nav__link:hover .contact-nav__img {color: rgba(33, 150, 243, 1);
+fill:var(--main-color);
+}
+.contact-nav__link:focus {color: rgba(33, 150, 243, 1);}
+.contact-nav__link:focus .contact-nav__img {color: rgba(33, 150, 243, 1);
+fill:var(--main-color);
+}
+/* --------------------HEADER----END----------------- */
