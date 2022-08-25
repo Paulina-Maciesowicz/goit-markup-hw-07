@@ -292,6 +292,40 @@ fill:var(--main-color);
     margin-bottom: 40px;
     margin-top: 200px;
 }
+
+/* -------------main-first-section------------------- */
+.card__items-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {}
+.card__img {
+    padding:25px;
+    margin-bottom:30px;
+    width: 270px; 
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.card_path {}
+.card__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 3%;
+    text-decoration: bold;
+}
+.card__copy {
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;
+}
+
+
+/* -------------modal-window------------------------- */
 .modal {}
 .modal__path {}
 .modal__nav {}
@@ -474,3 +508,162 @@ fill:var(--main-color);
     text-decoration: underline;}
 
 /* --------------------MODAL-WINDOW-end-------------- */
+
+/* -------------main-second-section------------------ */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-decoration: Bold;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom:50px;    
+}
+.card-second {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    margin: 0 auto;
+}
+.job-name {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+    margin: 0 auto;
+}
+.card-second__item {
+    position: relative;
+    overflow: hidden;
+}
+.card-second__item > .card-second__title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);;
+    color: #fff;
+    padding: 27px;
+}
+.card-second__img {
+    display: block;
+}
+.card-second__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* -----------------main-third-section-------------- */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-decoration: Bold;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom:50px;    
+}
+.card-team {
+    background-color: #F5F4FA;
+}
+.card-team__list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card-team__item {
+    width: 270px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+
+    /* box-shadow: <x-offset> <y-offset> <blur> <spread> <color> */
+    box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card-team__figure {
+    margin:auto 0;
+}
+.box {
+    padding: 30px;
+}
+.box__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom:10px;
+}
+.box__job {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*-------------------box-with-social-icons------------#FFFFFF*/
+.social-nav ul li{
+    width: 206px;
+    height: 56px;
+    margin-top: 16px;
+}
+.social-nav__list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-nav__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
+}
+.social-nav__icon:hover {
+    fill:#ffffff;
+    border-radius: 50%;
+    background-color: #2196f3;
+}
+.i-20 {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+}
+.i-20:hover {
+    fill:#ffffff;
+}
+.social-nav__icon:hover .i-20 { 
+    fill :#fff;
+}
