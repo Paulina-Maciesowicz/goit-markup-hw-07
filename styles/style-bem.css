@@ -79,7 +79,7 @@ figure {
     padding:10px 41px 10px 41px; 
     color: #ffffff;   
 }
-.button-style {
+.btn--portfolio {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -96,12 +96,12 @@ figure {
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: background-color, color, box-shadow;
 } 
-.button-style:hover {
+.btn--portfolio:hover {
     background-color: #2196f3;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
 }
-.button-style:focus {
+.btn--portfolio:focus {
     background-color: #2196f3;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -965,53 +965,60 @@ fill:var(--main-color);
     letter-spacing: 0.03em;  
 }
 /* --------------------PORTFOLIO-page----------------- */
-.container-btn {
+.button__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.button__list {
     width: 1200px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.contener-img {
-    /* Wycentrowanie sekcji */
+.button__item {}
+
+.tabs {}
+.tabs__container {
     margin: 0 auto;
     padding-left: 200px;
     padding-right: 200px;
 }
-.contener-img .wrapper {
-    /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
-    /* Najlepiej utwożyć osobną klasę lub drugą klasę */
+.tabs__container .wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
     gap: 30px;
 }
-.frame-portfolio {
-    border-bottom: 1px solid #E5E5E5;
-    border-right: 1px solid #E5E5E5;
-    border-left: 1px solid #E5E5E5;
-    padding: 20px 24px 20px 24px;
-    position:relative;
-    z-index: 1;
-    background: #fff;  
-}
-.title-porftolio {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    text-align: left;
+.tabs__list {
+    width: 1200px;
     margin: 0 auto;
-    margin-bottom: 4px;
-    letter-spacing: 0.06em;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.tilie-description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    color: #757575;
-    margin: 0 auto;
-    letter-spacing: 0.06em;
+.tabs__item {}
+.tabs__figure {
+    position: relative;
+    overflow: hidden;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: translate;
 }
-.overlay {
+.tabs__figure:hover .tabs__overlay {
+    transform: translateX(0);
+}
+.tabs__figure:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+.tabs__figure:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+.tabs__box {}
+.tabs__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1023,28 +1030,7 @@ fill:var(--main-color);
     transition-duration: 250ms;
     transition-property: transform, transition, background;
 }
-
-.box-shadow {
-    position: relative;
-    overflow: hidden;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: translate;
-}
-
-.box-shadow:hover .overlay{
-    transform: translateX(0);
-}
-.box-shadow:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
-.box-shadow:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
-.text {
+.tabs__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.555;
@@ -1052,5 +1038,31 @@ fill:var(--main-color);
     color: #fff;
     margin: auto 0;
     padding: 49px 45px 49px 24px;
+}
+.tabs__frame {
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    padding: 20px 24px 20px 24px;
+    position:relative;
+    z-index: 1;
+    background: #fff;  
+}
+.tabs__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    letter-spacing: 0.06em;
+}
+.tabs__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #757575;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
 }
 /* --------------------PORTFOLIO-end----------------- */

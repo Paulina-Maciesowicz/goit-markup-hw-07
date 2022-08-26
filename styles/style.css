@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-/* p {
+p {
     padding: 0;
 }
 .list-style-none {
@@ -62,7 +62,7 @@ img {
 }
 figure {
     margin:auto 0;
-} */
+}
 /* ----------------MIN-RESET-END--------------------- */
 /* ----------------COMPONENTS------------------------ */
 .button-style-1 {
