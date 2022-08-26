@@ -419,18 +419,16 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="client-container">
-            <!--------------------section-our-clients--------------->
-            <h2>Nasi klienci</h2>
-
-            <div class="client-box">
-              <ul class="wrapper">
+<!--------------------section-our-clients--------------->
+      <section class="client">
+        <div class="client__container">      
+            <h2 class="client__title">Nasi klienci</h2>
+            <div class="client__box">
+              <ul class="client__list">
                 <li>
-                  <a href="#"
-                    ><div class="client-icon">
-                      <svg class="client-inside">
+                  <a  href="#"
+                    ><div class="client__icon client-icon">
+                      <svg class="client__svg client-inside">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-1"
                         ></use>
@@ -439,9 +437,9 @@
                 </li>
 
                 <li>
-                  <a href="#">
-                    <div class="client-icon">
-                      <svg class="client-inside">
+                  <a  href="#">
+                    <div class="client__icon">
+                      <svg class="client__svg">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-2"
                         ></use>
@@ -451,8 +449,8 @@
 
                 <li>
                   <a href="#"
-                    ><div class="client-icon">
-                      <svg class="client-inside">
+                    ><div class="client__icon">
+                      <svg class="client__svg">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-3"
                         ></use>
@@ -462,8 +460,8 @@
 
                 <li>
                   <a href="#">
-                    <div class="client-icon">
-                      <svg class="client-inside">
+                    <div class="client__icon">
+                      <svg class="client__svg">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-4"
                         ></use>
@@ -473,8 +471,8 @@
 
                 <li>
                   <a href="#">
-                    <div class="client-icon">
-                      <svg class="client-inside">
+                    <div class="client__icon">
+                      <svg class="client__svg">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-5"
                         ></use>
@@ -484,8 +482,8 @@
 
                 <li>
                   <a href="#">
-                    <div class="client-icon">
-                      <svg class="client-inside">
+                    <div class="client__icon">
+                      <svg class="client__svg">
                         <use
                           href="./images/icons.svg/symbol-defs-min.svg#icon-Logo-6"
                         ></use>
@@ -494,25 +492,24 @@
                 </li>
               </ul>
             </div>
-          </div>
         </div>
       </section>
     </main>
 
-    <footer class="section footer-background">
-      <div class="container display">
-        <!----------------------FOOTER-------------------------->
-        <div class="box-navigation-footer">
-          <h3>
-            <a class="navigation-logo-2" href="./index.html"
-              ><span class="highlight-webstudio">Web</span>Studio</a
+<!----------------------FOOTER-------------------------->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__navigation">
+          <h3 class="footer__logo">
+            <a class="footer__link" href="./index.html"
+              ><span class="footer__link--highlight">Web</span>Studio</a
             >
           </h3>
-          <ol class="adres">
-            <li>
-              <h6>
+          <ol class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__contact">
                 <a
-                  class="contact-link-maps"
+                  class="footer__contact footer__contact--bold"
                   href="https://goo.gl/maps/ytyZVktENLEFnypA7"
                   >m. Warszawa, Aleje Jerozolimskie 21</a
                 >
@@ -520,14 +517,14 @@
             </li>
             <li>
               <h6>
-                <a class="contact-link-2" href="mailto:info@devstudio.com"
+                <a class="footer__contact footer__contact--gray" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </h6>
             </li>
             <li>
               <h6>
-                <a class="contact-link-2" href="tel:+48111111111"
+                <a class="footer__contact footer__contact--gray" href="tel:+48111111111"
                   >(48) 111-111-111</a
                 >
               </h6>
@@ -535,14 +532,14 @@
           </ol>
         </div>
 
-        <div class="box-navigation-footer-2">
-          <a class="color">DOŁĄCZ DO NAS</a>
+        <div class="join">
+          <a class="join__title">DOŁĄCZ DO NAS</a>
           <div>
-            <ul class="wrapper">
-              <li>
-                <a href="#"
-                  ><div class="social-icon">
-                    <svg class="i-20-white">
+            <ul class="join__list">
+              <li class="join__item">
+                <a class="join__link" href="#"
+                  ><div class="join__icon">
+                    <svg class="join__svg">
                       <use
                         href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
                       ></use>
@@ -552,8 +549,8 @@
 
               <li>
                 <a href="#">
-                  <div class="social-icon">
-                    <svg class="i-20-white">
+                  <div class="join__icon">
+                    <svg class="join__svg">
                       <use
                         href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
                       ></use>
@@ -563,8 +560,8 @@
 
               <li>
                 <a href="#"
-                  ><div class="social-icon">
-                    <svg class="i-20-white">
+                  ><div class="join__icon">
+                    <svg class="join__svg">
                       <use
                         href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
                       ></use>
@@ -574,8 +571,8 @@
 
               <li>
                 <a href="#">
-                  <div class="social-icon">
-                    <svg class="i-20-white">
+                  <div class="join__icon">
+                    <svg class="join__svg">
                       <use
                         href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
                       ></use>
@@ -586,12 +583,12 @@
           </div>
         </div>
 
-        <div class="box-newsletter">
+        <div class="newsletter">
           <!-- EMAIL -->
           <form class="display" name="email" method="GET" novalidate>
-            <label>
-              <a class="color">ZAPISZ SIĘ DO NEWSLETTERA</a>
-              <input
+            <label class="newsletter__label">
+              <a class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</a>
+              <input class="newsletter__input newsletter__input--email"
                 autocomplete="off"
                 type="email"
                 name="emailFormInput"
@@ -599,9 +596,9 @@
                 id="user_email"
               />
             </label>
-            <button type="submit" class="button-signup">
+            <button type="submit" class="btn btn--signup">
               Zapisz się
-              <svg class="box-iconsend">
+              <svg class="newsletter__svg">
                 <use
                   href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-iconsend"
                 ></use>
@@ -612,63 +609,63 @@
       </div>
     </footer>
 
-    <!--modal-window-->
-    <div class="container">
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <svg class="close-btn" data-modal-close>
-            <use
+<!----------------------modal-window-------------------------->
+      <div class="modal">
+        <div class="modal__backdrop is-hidden" data-modal>
+        <div class="modal__background">
+          <svg class="modal__svg" data-modal-close>
+            <use class="modal__path"
               href="./images/svg-modal-window/symbol-defs-modal-window-omg.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
 
-          <form class="box-modal">
-            <ul>
-              <li>
-                <p class="leave-style">
+          <form class="modal__form">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <p class="modal__title">
                   Zostaw swoje dane w formularzu poniżej
                 </p>
               </li>
               <li>
-                <label class="inputWithIcon">
+                <label class="modal__label">
                   Imię
-                  <input class="highlight" type="text" name="Name" required />
-                  <span
-                    ><svg class="icon-modal">
-                      <use
+                  <input class="modal__input" type="text" name="Name" required />
+                  <span class="modal__span"
+                    ><svg class="modal__svg">
+                      <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-person"
                       ></use></svg
                   ></span>
                 </label>
               </li>
               <li>
-                <label class="inputWithIcon">
+                <label class="modal__label">
                   Telefon
-                  <input type="tel" name="phone-number" required />
-                  <span
-                    ><svg class="icon-modal">
-                      <use
+                  <input class="modal__input" type="tel" name="phone-number" required />
+                  <span class="modal__span"
+                    ><svg class="modal__svg">
+                      <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-phone"
                       ></use></svg
                   ></span>
                 </label>
               </li>
               <li>
-                <label class="inputWithIcon">
+                <label class="modal__label inputWithIcon">
                   Email
-                  <input type="text" name="text" required />
-                  <span
-                    ><svg class="icon-modal">
-                      <use
+                  <input class="modal__input" type="text" name="text" required />
+                  <span class="modal__span"
+                    ><svg class="modal__svg">
+                      <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-email"
                       ></use></svg
                   ></span>
                 </label>
               </li>
               <li>
-                <label>
+                <label class="modal__label">
                   Komentarz
-                  <textarea value="Wprowadź tekst"></textarea>
+                  <textarea class="modal__textarea" value="Wprowadź tekst"></textarea>
                 </label>
               </li>
               <li>
@@ -679,22 +676,22 @@
                     name="myCheckboxName"
                     id="myCheckboxId"
                   />
-                  <svg class="checkbox__box">
-                    <use
+                  <svg class="checkbox__svg">
+                    <use class="modal__path"
                       href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-ok"
                     ></use>
                   </svg>
-                  <span class="statute">
+                  <span class="checkbox__statute">
                     Oświadczam iż akceptuję
-                    <a href="#" class="highlight-statute"> Regulamin </a> i
-                    <a href="#" class="highlight-statute">
+                    <a href="#" class="checkbox__statute--highlight"> Regulamin </a> i
+                    <a href="#" class="checkbox__statute--highlight">
                       Politykę Prywatności.</a
                     >
                   </span>
                 </label>
               </li>
               <li class="wrapper">
-                <button type="submit" class="button-send">Wyślij</button>
+                <button type="submit" class="btn btn--send">Wyślij</button>
               </li>
             </ul>
           </form>
