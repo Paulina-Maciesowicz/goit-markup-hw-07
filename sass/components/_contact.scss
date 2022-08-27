@@ -19,12 +19,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: color;
+
+    &:hover,
+    &:focus {color: rgba(33, 150, 243, 1);
+    }
 }
-.contact__link:hover {color: rgba(33, 150, 243, 1);}
+
 .contact__link:hover .contact__svg {color: rgba(33, 150, 243, 1);
 fill:var(--main-color);
 }
-.contact__link:focus {color: rgba(33, 150, 243, 1);}
+
 .contact__link:focus .contact__svg {color: rgba(33, 150, 243, 1);
 fill:var(--main-color);
 }

@@ -46,9 +46,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: color;
-}
-.footer__contact--bold:hover {color: rgba(33, 150, 243, 1);}
-.footer__contact--bold:focus {color: rgba(33, 150, 243, 1);
+
+    &:hover,
+    &:focus {
+        color: rgba(33, 150, 243, 1);
+    }
 }
 .footer__contact--gray {
     text-decoration: none;
@@ -62,7 +64,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: color;
-}
-.footer__contact--gray:hover {color: rgba(33, 150, 243, 1);}
-.footer__contact--gray:focus {color: rgba(33, 150, 243, 1);
+
+    &:hover,
+    &:focus {
+        color: rgba(33, 150, 243, 1);
+    }
 }

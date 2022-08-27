@@ -46,6 +46,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: border;
+
+    &:hover {
+        border: 1px solid var(--main-color);
+     }
 }
 .client__svg {
     width: 106px;
@@ -56,9 +60,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: fill;
-}
-.client__icon:hover {
-   border: 1px solid var(--main-color);
 }
 .client__icon:hover .client__svg {
     fill: var(--main-color);

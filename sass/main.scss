@@ -12,15 +12,14 @@
 @import "./components/social-footer";
 @import "./components/modal";
 @import "./components/checkbox";
+@import "./components/backdrop";
 
 @import "./layout/header";
 @import "./layout/hero";
-
-@import "./pages/section-images";
-@import "./pages/section-works";
-@import "./pages/section-team";
-@import "./pages/section-clients";
-
+@import "./layout/section-images";
+@import "./layout/section-works";
+@import "./layout/section-team";
+@import "./layout/section-clients";
 @import "./layout/footer";
 
 @import "./pages/portfolio";
