@@ -585,10 +585,10 @@
 
         <div class="newsletter">
           <!-- EMAIL -->
-          <form class="display" name="email" method="GET" novalidate>
+          <form class="newsletter__form" class="display" name="email" method="GET" novalidate>
             <label class="newsletter__label">
               <a class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</a>
-              <input class="newsletter__input newsletter__input--email"
+              <input class="newsletter__input"
                 autocomplete="off"
                 type="email"
                 name="emailFormInput"
@@ -613,7 +613,7 @@
       <div class="modal">
         <div class="modal__backdrop is-hidden" data-modal>
         <div class="modal__background">
-          <svg class="modal__svg" data-modal-close>
+          <svg class="modal__img" data-modal-close>
             <use class="modal__path"
               href="./images/svg-modal-window/symbol-defs-modal-window-omg.svg#icon-close-black-18dp-2-1"
             ></use>
@@ -631,7 +631,7 @@
                   Imię
                   <input class="modal__input" type="text" name="Name" required />
                   <span class="modal__span"
-                    ><svg class="modal__svg">
+                    ><svg class="modal__img">
                       <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-person"
                       ></use></svg
@@ -643,7 +643,7 @@
                   Telefon
                   <input class="modal__input" type="tel" name="phone-number" required />
                   <span class="modal__span"
-                    ><svg class="modal__svg">
+                    ><svg class="modal__img">
                       <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-phone"
                       ></use></svg
@@ -655,7 +655,7 @@
                   Email
                   <input class="modal__input" type="text" name="text" required />
                   <span class="modal__span"
-                    ><svg class="modal__svg">
+                    ><svg class="modal__img">
                       <use class="modal__path"
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-email"
                       ></use></svg
@@ -665,7 +665,7 @@
               <li>
                 <label class="modal__label">
                   Komentarz
-                  <textarea class="modal__textarea" value="Wprowadź tekst"></textarea>
+                  <textarea class="modal__textarea" placeholder="Wprowadź tekst"></textarea>
                 </label>
               </li>
               <li>
