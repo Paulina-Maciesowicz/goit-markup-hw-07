@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -439,10 +440,10 @@ figure {
   margin-right: 12px;
 }
 .newsletter__input:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .newsletter__input:focus-visible {
-  outline: #2196F3;
+  outline: rgba(255, 255, 255, 0.3);
 }
 .newsletter__svg {
   width: 24px;
@@ -918,17 +919,15 @@ figure {
   padding-right: 200px;
 }
 .tabs .wrapper {
+  /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
+  /* Najlepiej utwożyć osobną klasę lub drugą klasę */
   flex-wrap: wrap;
   justify-content: center;
+  /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
   gap: 30px;
 }
-.tabs__list {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.tabs__item {
+  gap: 30px;
 }
 .tabs__figure {
   position: relative;

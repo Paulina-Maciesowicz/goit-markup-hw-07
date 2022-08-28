@@ -5,26 +5,21 @@
     justify-content: center;
     margin-bottom: 50px;
 }
-
 .tabs {
     margin: 0 auto;
     padding-left: 200px;
     padding-right: 200px;
-    // flex-basis: calc(33% - 15px);
-
-    .wrapper {
+     .wrapper {
+        /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
+        /* Najlepiej utwożyć osobną klasę lub drugą klasę */
         flex-wrap: wrap;
         justify-content: center;
+        /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
         gap: 30px;
-    }
-    &__list {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        }
+    &__item {
+            gap: 30px;
+        }
     &__figure {
         position: relative;
         overflow: hidden;
