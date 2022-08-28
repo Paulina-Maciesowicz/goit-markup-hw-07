@@ -2,56 +2,59 @@
     width: 206px;
     height: 56px;
     margin-top: 16px;
-}
-.social .social__list .social__item {
-    width: 206px;
-    height: 56px;
-    margin-top: 16px;
-}
-.social__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social__item {
-    width: 206px;
-    height: 56px;
-    margin-top: 16px;
-}
 
-/* .social__link {} */
-
-.social__icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 11px;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: background-color;
-
-    &:hover {
-        fill:#ffffff;
+    & {
+        &__list {
+            &__item {
+                width: 206px;
+                height: 56px;
+                margin-top: 16px;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        width: 206px;
+        height: 56px;
+        margin-top: 16px;
+    }
+    &__icon {
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
-        background-color: #2196f3;
+        text-align: center;
+        padding: 11px;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+        transition-property: background-color;
+    
+        &:hover {
+            fill:#ffffff;
+            border-radius: 50%;
+            background-color: #2196f3;
+        }
+        &:hover {
+                .social__svg {
+                    fill: #fff;
+                }
+            } 
+    }
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: #AFB1B8;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    
+        &:hover {
+            fill:#ffffff;
+        }
+        
     }
 }
-
-.social__svg {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-}
-.social__svg:hover {
-    fill:#ffffff;
-}
-.social__icon:hover .social__svg { 
-    fill :#fff;
-}
-
-/* .social__path {} */
